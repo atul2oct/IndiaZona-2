@@ -1,13 +1,13 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-// import { useHistory } from 'react-router-dom'; // For navigation using React Router
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 const CategoryBoxes = () => {
-  const history = useHistory(); // Hook to access history for navigation
+  const navigate = useNavigate(); // Hook to navigate programmatically
 
   // Function to handle redirection
   const handleRedirect = (url) => {
-    history.push(url); // Redirect to the provided URL
+    navigate(url); // Navigate to the provided URL
   };
 
   return (
