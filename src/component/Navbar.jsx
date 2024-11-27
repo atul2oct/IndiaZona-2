@@ -7,9 +7,11 @@ const Navbar = () => {
     return (
         <div className='relative flex min-h-[calc(100vh-3.5rem)] '>
             <div className='flex-col mx-4'>
+            {/* logo */}
                 <Link to = '/'>
                     <img src={Logo} alt="logo" className="object-contain h-28"/>
                 </Link>
+                {/* navbar/ sidebar */}
                 <Sidebar/>
 
             </div>
