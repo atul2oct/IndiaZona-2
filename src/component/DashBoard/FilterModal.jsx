@@ -84,13 +84,13 @@ const FilterModal = ({ open, onClose, handleOpenFilter, handleOpenCategory }) =>
               minWidth: 'auto', // Remove the default min-width to make it more compact
               borderRadius: '4px', // Border radius for a smaller button
               '&:hover': {
-                backgroundColor: 'white', // Darken the background on hover
+                backgroundColor: 'white', 
                 color: '#405AA4',
                 border: '1px solid #405AA4',
               },
             }}
             onClick={handleDownload} // Add click handler
-            endIcon={<DownloadIcon />} // Set the icon to appear before the text
+            endIcon={<DownloadIcon />} // Set the icon to appear after the text
           >
             Download Reports
           </Button>
@@ -150,7 +150,7 @@ const FilterModal = ({ open, onClose, handleOpenFilter, handleOpenCategory }) =>
             backgroundColor: '#405AA4', // Custom background color
             color: 'white',              // Text color (white for contrast)
             '&:hover': {
-              backgroundColor: 'white', // Darken the background on hover
+              backgroundColor: 'white', 
               color:'#405AA4',
               border:'1px solid #405AA4'
             },
